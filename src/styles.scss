@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+/* O + serve para dizer, pegue todos os .rf_nav_link_button que tenham a sua esquerda outro .rf_nav_link_button 
+ como o primeiro nao tem outro .rf_nav_link_button a sua esquerda a margim não é aplicada para ele.*/
+ .rf_nav_link_button + .rf_nav_link_button {
+    margin-left: 1rem;    
+ }
+
+ a.rf_nav_link_button.active{
+    border-bottom: 2px solid red;   
+}
+
+
+.rf_container_direita{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-grow: 1;
+}

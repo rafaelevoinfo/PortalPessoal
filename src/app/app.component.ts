@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'PortalPessoal';
+  selectedTab:number=1;
+
+  ativarLink(tabIndex:number){
+    this.selectedTab = tabIndex;
+  }
 }
