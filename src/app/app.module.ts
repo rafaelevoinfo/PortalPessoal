@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PortifolioComponent } from './portifolio/portifolio.component';
 import { ContrateComponent } from './contrate/contrate.component';
+import { PerfilComponent } from './perfil/perfil.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent,    
     PortifolioComponent,
-    ContrateComponent
+    ContrateComponent,
+    PerfilComponent
   ],
   imports: [
     BrowserModule,
