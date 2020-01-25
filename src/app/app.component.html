@@ -1,18 +1,18 @@
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
   <ul class="nav navbar-nav w-100">
     <li class="nav-item">
-      <a class="nav-link rf_nav_link_button" [ngClass]="{'active': selectedTab== 1}" (click)="ativarLink(1)" [routerLink]="['/']" routerLinkActive="active">
+      <a class="nav-link rf_nav_link_button" [class.active]="selectedTab== 1" (click)="ativarLink(1)" [routerLink]="['/perfil']" routerLinkActive="active">
         PERFIL
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link rf_nav_link_button" [ngClass]="{'active': selectedTab== 2}" [routerLink]="['/portifolio']" (click)="ativarLink(2)">
+      <a class="nav-link rf_nav_link_button" [class.active]="selectedTab== 2" [routerLink]="['/portifolio']" (click)="ativarLink(2)">
         PORTIFOLIO
       </a>
     </li>
     <div class="rf_container_direita">
       <li class="nav-item">
-        <a class="nav-link rf_nav_link_button" [ngClass]="{'active': selectedTab== 3}" [routerLink]="['/contrate-me']" (click)="ativarLink(3)">
+        <a class="nav-link rf_nav_link_button" [class.active]="selectedTab== 3" [routerLink]="['/contrate']" (click)="ativarLink(3)">
           CONTRATE-ME
         </a>
       </li>
